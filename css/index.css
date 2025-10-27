@@ -1,0 +1,18 @@
+.intro{
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+
+.intro strong{
+  color:#fff;
+  text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
+  font-size: 30px;
+  text-align:center;
+  font-weight:bolder;
+}
+
+.intro i{
+  padding-right: 6px;
+  text-shadow:1px 1px 2px #fff, 1px 1px 1px #ccc;
+}

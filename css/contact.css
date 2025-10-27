@@ -1,0 +1,43 @@
+.contact{
+  width: 80%;
+  margin: 80px auto;
+}
+
+.contact p{
+  text-align: justify;
+  padding-top: 40px;
+}
+
+.contact strong{
+  color:#fff;
+  text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
+  font-size: 30px;
+  text-align:center;
+  font-weight:bolder;
+}
+.contact i{
+  font-size: 30px;
+  padding-right: 6px;
+  text-shadow:1px 1px 2px #fff, 1px 1px 1px #ccc;
+}
+
+.contact-icons{
+  margin-top: 40px;
+  text-align: center;
+}
+.contact-icons i{
+  font-size: 50px;
+}
+.contact-icons i:hover{
+  text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
+  transition: text-shadow 0.3s ease;
+}
+
+.contact-icons a{
+  margin-right: 60px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}

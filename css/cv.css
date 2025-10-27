@@ -1,0 +1,12 @@
+.cv{
+  display: flex;
+  flex-direction: column;
+}
+.cv img{
+  margin: 20px auto;
+  width: 60%;
+  height: auto;
+}
+.cv a{
+  text-align: center;
+}

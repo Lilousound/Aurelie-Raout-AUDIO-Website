@@ -1,0 +1,28 @@
+.menu{
+  height: 500px;
+  width: 250px;
+  position: fixed;
+  top: 130px;
+  border: 1px solid white;
+  background-color: rgba(58, 52, 99, 0.3);
+  color: rgb(236, 235, 235);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu ul li a{
+  color: rgb(236, 235, 235);
+  font-family: var(--menu-font);
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 3em;
+}
+#title{
+  text-align: center;
+  padding: 2px;
+  margin: 10px auto;
+  border: 1px solid white;
+}
+#title span{
+  font-family: var(--menu-font);
+  font-size: 50px;
+  padding-right: 60px;
+}

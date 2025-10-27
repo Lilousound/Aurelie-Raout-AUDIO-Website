@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+@import url('menu.css');
+@import url('index.css');
+@import url('cv.css');
+@import url('contact.css');
+
+
+:root{
+  --menu-color: rgb(197, 202, 207);
+  --text-color: #0abdd9;
+  --menu-font: 'Bruno Ace SC', sans-serif;
+  --main-font: 'Gruppo', sans-serif;
+  --footer-text: #7396b7;
+}
+
+html, body{
+  height: 100%;
+  font-size: 24px;
+  color: white;
+  font-family: var(--main-font);
+}
+
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.454)), url(../img/sound_wave4.jpg);
+  background-size: auto;
+  background-repeat: repeat-y;
+  margin-bottom: 100px;
+  margin: 0;
+}
+ul, li, a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+main{
+  margin-left: 250px;
+  margin-top: 70px;
+  padding-bottom: 60px;
+}
+a:hover{
+  text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
+  transition: text-shadow 0.3s ease;
+}
+
+.card{
+  border: 1px solid white;
+  width: 80%;
+  height: auto;
+  margin: 40px auto;
+  padding: 10px;
+  background-color: rgba(58, 52, 99, 0.3);
+  box-shadow: 2px 2px 10px #000;
+  display: flex;
+}
+.card iframe{
+    margin-left: auto;   /* pousse l'iframe vers la droite */
+    margin-right: 50px;  /* espace de 50px depuis le bord droit */
+    max-width: 100%;     /* évite le débordement */
+    width: 460px;
+}
+.card img {
+  width: 320px;
+  height: 90%;
+  margin-left: 50px;
+
+}
+.description{
+  width: 50%;
+  padding: 20px;
+  font-size: 20px;
+}
+.description h2{
+  text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
+}
+.second-title{
+  text-align: center;
+  font-size: 40px;
+  text-shadow:1px 1px 8px #fff, 1px 1px 8px #ccc;
+  margin-bottom: 20px;
+}
+
+/* ?FOOTER */
+footer{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin: 2px;
+  font-size: 28px;
+  position: sticky;
+  bottom: 0;
+  padding:10px;
+}
+footer a{
+  padding-left: 100px;
+  font-size: 40px;
+}
+footer p{
+  position: absolute;
+  left: 100px;
+  font-size: 20px;
+}
+
+/* *Menu Burger  */
+
+/* Cacher l'input de type checkbox */
+input[type=checkbox] {
+    display: none;
+}
+
+/* icône burger */
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+}
+/* Cacher l'icône burger sur les écrans d'ordinateur */
+.burger {
+    display: none;
+}
+
+
+
+/* ! MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    /* Cacher les liens de la barre de navigation sur les écrans mobiles */
+    .nav-links {
+        display: none;
+    }
+    .menu{
+      border: none;
+      background-color: transparent;
+    }
+
+    /* Afficher l'icône burger sur les écrans mobiles */
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin: auto;
+        z-index: 999;
+    }
+    main{
+      margin-left: 0;
+      margin-top: 120px;
+    }
+    /* Afficher les liens de la barre de navigation lorsque la case est cochée sur les écrans mobiles */
+    input[type=checkbox]:checked ~ .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        align-items: center;
+        position: absolute;
+        left: 5px;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.75);
+        margin-left: 30px;
+    }
+    .menu ul li a{
+      line-height: 2.3em;
+    }
+    #title{
+      font-size: 18px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+}
+    #title span{
+      font-size: 30px;
+      margin: auto;
+      padding-right: 0px;
+}
+    .card{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .description{
+      width: 90%;
+    }
+
+    /* ?FOOTER */
+    footer{
+      padding:0px;
+    }
+    footer a{
+      padding-left: 10px;
+      font-size: 20px;
+      margin-left: 30px;
+    }
+    footer p{
+      position: relative;
+      left: 10px;
+      font-size: 14px;
+    }
+
+}
